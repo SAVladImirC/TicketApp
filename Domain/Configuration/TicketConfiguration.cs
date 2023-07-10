@@ -14,7 +14,8 @@ namespace Domain.Configuration
             builder
                 .HasOne(t => t.Movie)
                 .WithOne(m => m.Ticket)
-                .HasForeignKey<Ticket>(t => t.MovieId);
+                .HasForeignKey<Ticket>(t => t.MovieId)
+                .IsRequired(false);
 
             builder
                 .HasMany(t => t.Carts)

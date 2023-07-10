@@ -11,7 +11,7 @@ namespace TicketApp
 
             // Add services to the container.
             builder.Services.AddRazorPages();
-
+            builder.Services.AddControllersWithViews();
             builder.Services.RegisterRepository(builder.Configuration);
             builder.Services.RegisterServices();
 
@@ -33,6 +33,14 @@ namespace TicketApp
             app.UseAuthorization();
 
             app.MapRazorPages();
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapRazorPages();
+            });
 
             app.Run();
         }

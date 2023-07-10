@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketApp", "TicketApp\TicketApp.csproj", "{B10E0DF9-8595-49D4-BA6E-9240610C8731}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TicketApp", "TicketApp\TicketApp.csproj", "{B10E0DF9-8595-49D4-BA6E-9240610C8731}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{692D5292-9212-45AC-AA85-C74793CDF74F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{692D5292-9212-45AC-AA85-C74793CDF74F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{6B7AB557-B992-4C76-8FC0-1C7553484A6D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository", "Repository\Repository.csproj", "{6B7AB557-B992-4C76-8FC0-1C7553484A6D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{F598C723-8550-47F9-B9B0-E0DAEBF9AEB1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service", "Service\Service.csproj", "{F598C723-8550-47F9-B9B0-E0DAEBF9AEB1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -20,6 +20,14 @@ namespace Repository
         {
         }
 
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            if (!optionsBuilder.IsConfigured)
+            {
+                optionsBuilder.UseSqlServer("Server=BGWDame;Database=TicketApp;User=vladimir;Password=vladimir;TrustServerCertificate=True");
+            }
+        }
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
